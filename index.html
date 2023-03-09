@@ -21,8 +21,8 @@
     <section class="header">
       <nav>
         <a herf="index.html"> <img src="images/logo.png" alt="logo" /></a>
-        <div class="nav-links">
-          <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -31,7 +31,7 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>Welcome to DCU Universtiy</h1>
@@ -45,5 +45,162 @@
         <a href="" class="hero-btn">Visit Us To Know More</a>
       </div>
     </section>
+
+    <!--------Featured Courses -------->
+    <section class="course">
+      <h1>Course We Offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+            voluptatum quidem quos quas.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+            voluptatum quidem quos quas.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+            voluptatum quidem quos quas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------- campus -------->
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" alt="campus" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" alt="campus" />
+          <div class="layer">
+            <h3>NEW YORK</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png" alt="campus" />
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------- Facilities -------->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" />
+          <h3>Our University Library</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" />
+          <h3>Our Fitness Center</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" />
+          <h3>Campus Food Court</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-------- Testimonial -------->
+    <section class="testimonial">
+      <h1>What Our Students Says</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/user1.jpg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+              voluptatum quidem quos quas.
+            </p>
+            <h3>Adriana Lima</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="images/user2.jpg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+              voluptatum quidem quos quas.
+            </p>
+            <h3>Johnny Depp</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------- Call to Action -------->
+    <section class="cta">
+      <h1>
+        Enroll For Our Various Online Course <br />
+        Anywhere From The World
+      </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-------- Footer -------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptate, quod, quia, <br >voluptates quae voluptatibus quibusdam voluptatum
+        quidem quos quas.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Learn from <i class="fa fa-heart-o"></i> by HTML&CSS tutorial</p>
+    <!-------- JS script for toggle menu -------->
+    <script>
+      const navLink = document.getElementById("navLinks");
+      function showMenu() {
+        navLink.style.right = "0";
+      }
+      function hideMenu() {
+        navLink.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
