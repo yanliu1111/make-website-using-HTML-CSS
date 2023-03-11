@@ -145,3 +145,9 @@ function windowResized() {
   ctx.fillStyle = "#000000";
   ctx.fillRect(0, 0, width, height);
 }
+
+//activation of `firecontrol` button, to navigate to the next page.
+const btn_firecontrol = document.getElementById("#firecontrol");
+btn_firecontrol.addEventListener("click", function () {
+  window.location.href = "index.html";
+});
