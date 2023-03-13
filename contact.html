@@ -17,40 +17,82 @@
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
     /> -->
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
   </head>
   <body>
     <section class="sub-header">
       <nav>
-        <a herf="index.html"> <img src="images/logo.png" alt="logo" /></a>
+        <!-- <a herf="index.html"> <img src="images/logo.png" alt="logo" /></a> -->
+        <a herf="index.html"> <img src="images/logo.png" title="Firework page" onclick="window.location.href='firework.html'"/></a>
+
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      <h1>About US </h1>
+      <h1>Contact Us </h1>
     </section>
 
-    <!-------- About Us content -------->
-   
+    <!-------- contact us -------->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20065.808834334282!2d-114.08562001531318!3d51.04891273555559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffb86200597%3A0x10c42af1e7df241e!2sDowntown%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1678721216030!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+
+   <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>XYZ Road, ABC Building</h5>
+            <p>Downtown, Calgary, Alberta</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>
+            <h5>+1 0123456789</h5>
+            <p>Monday to Saturday, 9am to 5pm</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-envelope-circle-check"></i>
+          <span>
+            <h5>infor@contactus.com</h5>
+            <p>Please contact us</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+<form action="">
+  <input type="text" placeholder="Enter your name" required>
+  <input type="email" placeholder="Enter your email" required>
+  <input type="text" placeholder="Enter your subject" required>
+  <textarea  rows="8" placeholder="Message" required></textarea>
+  <button type="submit" class="hero-btn red-btn">Send Message</button>
+</form>
+      </div>
+    </div>
+   </section>
     <!-------- Footer -------->
     <section class="footer">
-      <h4>About Us</h4>
+      <h4>Contact Us</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
         voluptate, quod, quia, <br >voluptates quae voluptatibus quibusdam voluptatum
         quidem quos quas.
       </p>
       <div class="icons">
-        <i class="fa fa-facebook"></i>
+        <i class="fa fa-square-facebook"></i>
         <i class="fa fa-twitter"></i>
         <i class="fa fa-instagram"></i>
         <i class="fa fa-linkedin"></i>
