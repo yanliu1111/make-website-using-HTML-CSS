@@ -20,6 +20,7 @@ nav {
 }
 nav img {
   width: 150px;
+  cursor: pointer;
 }
 .nav-links {
   flex: 1;
